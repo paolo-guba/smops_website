@@ -1713,12 +1713,12 @@ input, select, textarea {
 	
 
 		.sponsor section .logo.vert img{
-			max-height:200px;
+			max-height:150px;
 		}
 
 		.sponsor section .logo.hor img {
 			width:100%;
-			max-height:200px;
+			max-height:150px;
 	}
 
 	@media screen and (max-width: 480px) {
