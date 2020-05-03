@@ -1743,9 +1743,7 @@ input, select, textarea {
 
 /* Collapsibles */
 /* for accordion */
-input[type="button"].accordion,
-button.accordion,
-.button.accordion {
+button.accordion {
 	width: 100%;
 	background-color: transparent;
 	border-radius: 4px;
@@ -1776,6 +1774,18 @@ button.accordion,
 	border-radius: 50%;
 	display: inline-block;
 	/* display: block; */
+}
+
+@media screen and (max-width: 480px) {
+
+	.crewimg img{
+		width: 4.5rem;
+		vertical-align: middle;
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		display: inline-block;
+		/* display: block; */
+	}
+
 }
 
 .crewname {
