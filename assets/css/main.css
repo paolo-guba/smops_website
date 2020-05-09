@@ -1776,6 +1776,15 @@ button.accordion {
 	/* display: block; */
 }
 
+.expimg img{
+	width: 7.5rem;
+	vertical-align: middle;
+	padding: 1rem 1rem 1rem 1rem;
+	border-radius: 50%;
+	display: inline-block;
+	/* display: block; */
+}
+
 @media screen and (max-width: 480px) {
 
 	.crewimg img{
