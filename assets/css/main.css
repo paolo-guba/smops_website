@@ -1817,17 +1817,16 @@ button.accordion {
 
 .accordion .description {
 	display: inline-block;
-	width: 100%;
-	text-transform: none;
-	word-wrap: break-word;
-	overflow-wrap: normal;
-	hyphens: auto;
+	/* text-align: justify;
+	text-justify: inter-word;
+	overflow: hidden;
+	text-transform: none; */
 	font-style: italic;
-	/* line-height: 100px; */
 }
 
 .accordion .detail {
 	display: inline-block;
+	font-size: 1em;
 	/* overflow-wrap: break-word; */
 	/* word-wrap: break-word; */
 	/* overflow-wrap: normal; */
