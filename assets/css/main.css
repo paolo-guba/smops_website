@@ -289,6 +289,13 @@ input, select, textarea {
 		margin: 2.75rem 0;
 	}
 
+	hr.separator {
+		border-bottom: solid 1px grey;
+		padding: 0px;
+		margin-top: 1em;    
+		margin-bottom: 1em;
+	}
+
 	.align-left {
 		text-align: left;
 	}
@@ -647,14 +654,14 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
+			/* background-image: url("../../images/overlay.png"); */
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -697,7 +704,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 0.5rem 0;
 			width: 100%;
 		}
 
@@ -1767,7 +1774,7 @@ button.accordion {
 }
 
 .crewimg img{
-	width: 7.5rem;
+	width: 5.5rem;
 	vertical-align: middle;
 	padding: 1rem 1rem 1rem 1rem;
 	border-radius: 50%;
@@ -1815,22 +1822,13 @@ button.accordion {
 	vertical-align: middle;
 }
 
-.accordion .description {
+.crewname .detail {
 	display: inline-block;
-	/* text-align: justify;
-	text-justify: inter-word;
-	overflow: hidden;
-	text-transform: none; */
-	font-style: italic;
+	font-size: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 0em;
 }
 
-.accordion .detail {
-	display: inline-block;
-	font-size: 1em;
-	/* overflow-wrap: break-word; */
-	/* word-wrap: break-word; */
-	/* overflow-wrap: normal; */
-	/* hyphens: auto; */
+.crewname .detail.news {
 	font-style: italic;
-	/* line-height: 100px; */
 }
