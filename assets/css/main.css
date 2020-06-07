@@ -172,7 +172,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -292,8 +292,8 @@ input, select, textarea {
 	hr.separator {
 		border-bottom: solid 1px grey;
 		padding: 0px;
-		margin-top: 1em;    
-		margin-bottom: 1em;
+		margin-top: 0.7em;    
+		margin-bottom: 0.7em;
 	}
 
 	.align-left {
@@ -732,7 +732,7 @@ input, select, textarea {
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2rem 0;
+		margin: 1rem 0 1rem 0;
 		padding-left: 1.25em;
 	}
 
@@ -1752,60 +1752,63 @@ input, select, textarea {
 /* for accordion */
 button.accordion {
 	width: 100%;
-	background-color: transparent;
-	border-radius: 4px;
-	border: none;
+	white-space: normal;
+	/* background-color: transparent; */
 	box-shadow: none;
-	color: #ffffff !important;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 0.8rem;
-	font-weight: 300;
-	height: fit-content;
-	letter-spacing: 0.2rem;
-	line-height: 2.75rem;
-	outline: 0;
-	padding: 0 0 0 0;
+	/* border: 2px solid #4CAF50; Green */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+	padding: 0;
+}
+
+.imagewrapper {
+	width: 15%;
+	min-width: 70px;
+}
+
+.imagewrapper img {
+	width: 80%;
+	vertical-align: middle;
+	/* object-fit: contain; */
+	border-radius: 50%;
+}
+
+.imagewrapper.exp img {
+	border-radius: 0;
+	width: 60%;
+}
+
+.accordion .infocontainer { /* Container*/
 	text-align: left;
-	text-decoration: none;
-	text-transform: uppercase;
-	vertical-align:middle;
-	white-space: nowrap;
+	margin: 1em;
+	width: 85%;
+	line-height: 1.5;
+
+	/* display: flex;
+	flex-direction: column;
+	font-size:1em;
+	max-width: 100%;
+	align-items: left;
+	justify-content: left; */
 }
 
-.crewimg img{
-	width: 5.5rem;
-	vertical-align: middle;
-	padding: 1rem 1rem 1rem 1rem;
-	border-radius: 50%;
-	display: inline-block;
-	/* display: block; */
-}
-
-.expimg img{
-	width: 7.5rem;
-	vertical-align: middle;
-	padding: 1rem 1rem 1rem 1rem;
-	border-radius: 50%;
-	display: inline-block;
-	/* display: block; */
-}
-
-@media screen and (max-width: 480px) {
-
-	.crewimg img{
-		width: 4.5rem;
-		vertical-align: middle;
-		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-		display: inline-block;
-		/* display: block; */
+	.infocontainer .name {
+		font-weight: bold;
+		margin-bottom: 0.5em;
 	}
 
-}
+	.infocontainer .detail {
+		font-size: 0.7em;
+	}
 
-
+	.info .detail.news {
+		font-style: italic;
+	}
 
 .panel {
+	display: block;
 	padding: 0 0;
 	background-color: rgba(255, 255, 255, 0);
 	max-height: 0;
@@ -1815,20 +1818,8 @@ button.accordion {
 	transition: max-height 0.2s ease-out;
   }
 
-  .accordion .crewname {
-	display: inline-block;
-	line-height:22px;
-	/* overflow: scroll; */
-	vertical-align: middle;
-}
-
-.crewname .detail {
-	display: inline-block;
-	font-size: 0.7em;
-	margin-top: 0.5em;
+.panel p {
+	margin-top: 1em;
 	margin-bottom: 0em;
 }
 
-.crewname .detail.news {
-	font-style: italic;
-}
