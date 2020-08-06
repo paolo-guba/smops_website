@@ -1709,22 +1709,28 @@ input, select, textarea {
 		border-top: transparent;
 		text-align: center;
 		padding: 1em ;
+	}
+	
+	.sponsor section.vert {
 		width: 33%;
+	}
+
+	.sponsor section.hor {
+		width: 50%;
 	}
 
 	.sponsor section a.logo{
 		border-bottom: transparent;
 		position: relative;
-		/*line-height: 140px;*/
+		max-width: 100%;
 	}
 
-		.sponsor section .logo.vert img{
-			max-height:150px;
+		.sponsor section.vert img{
+			width: 100%;
 		}
 
-		.sponsor section .logo.hor img {
+		.sponsor section.hor img {
 			width:100%;
-			max-height:150px;
 	}
 
 	@media screen and (max-width: 480px) {
