@@ -19,8 +19,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the results
-  document.getElementById("countdown").innerHTML="The mission will start in: <b>" + days + "</b> days <b>" + hours + "</b> hours <b>"
-  + minutes + "</b> minutes and <b>" + seconds + "</b> seconds";
+  document.getElementById("countdown").innerHTML="Mission begins in<br><b>" + days + "</b> days <b>" + hours + "</b> hours and <b>"
+  + minutes + "</b> minutes";
 
   //If the count down is over, write some text 
   if (distance < 0) {
