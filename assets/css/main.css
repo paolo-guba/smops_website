@@ -913,6 +913,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		margin: 0;
 	}
 
 		ul.icons li {
@@ -1785,6 +1786,10 @@ input, select, textarea {
 
 			.sponsor section.vert {
 				width: 60%;
+			}
+
+			.sponsor section.main.vert {
+				width: 40%;
 			}
 		
 			.sponsor section.hor {
