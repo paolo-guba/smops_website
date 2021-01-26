@@ -200,6 +200,11 @@ input, select, textarea {
 			margin: 0 0 2rem 0;
 		}
 
+			h3.major {
+				padding-top: 1rem;
+				text-transform: none;
+			}
+
 	h1 {
 		font-size: 2.25rem;
 		line-height: 1.3;
@@ -1004,6 +1009,35 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
+			
+/* Table */
+
+.bios-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+.bios-table tbody tr {
+	border: none;
+	background: transparent;
+}
+
+.bios-table tbody tr:first-child {
+	background: transparent;
+}
+
+.bios-table th {
+	text-align: right;
+	width:10%;
+}
+
+.bios-table td {
+	text-align: left;
+}
 
 /* Button */
 
@@ -1685,7 +1719,8 @@ input, select, textarea {
 
 /* Sponsor wall */
 
-.sponsor {
+.sponsor 
+{
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -1715,6 +1750,10 @@ input, select, textarea {
 		width: 33%;
 	}
 
+	.sponsor section.main.vert {
+		width: 10%;
+	}
+
 	.sponsor section.hor {
 		width: 50%;
 	}
@@ -1742,6 +1781,14 @@ input, select, textarea {
 			.sponsor section {
 				position: relative;
 				width: 100%;
+			}
+
+			.sponsor section.vert {
+				width: 60%;
+			}
+		
+			.sponsor section.hor {
+				width: 80%;
 			}
 
 				.sponsor section .logo {
@@ -1787,24 +1834,26 @@ button.accordion {
 
 .accordion .infocontainer { /* Container*/
 	text-align: left;
-	margin: 1em 1em 1em 0em;
+	margin: 1em 1em 1em 1em;
 	width: 100%;
 	line-height: 1.5;
-
-	/* display: flex;
-	flex-direction: column;
-	font-size:1em;
-	max-width: 100%;
-	align-items: left;
-	justify-content: left; */
 }
 
 	.infocontainer .name {
 		font-weight: bold;
-		margin-bottom: 0.5em;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		letter-spacing: 1px;
 	}
 
 	.infocontainer .detail {
+		font-size: 0.7em;
+		/*margin-top: 0.5rem;*/
+		visibility: hidden; /* remove to show the element */
+	}
+
+	.infocontainer .detail .name {
 		font-size: 0.7em;
 	}
 
@@ -1824,8 +1873,7 @@ button.accordion {
   }
 
 .panel p {
-	margin-top: 1em;
-	margin-bottom: 0em;
+	margin-bottom: 0.5em;
 }
 
 
