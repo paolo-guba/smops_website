@@ -1854,16 +1854,15 @@ button.accordion {
 
 	.infocontainer .detail {
 		font-size: 0.7em;
-		/*margin-top: 0.5rem;*/
-		visibility: hidden; /* remove to show the element */
 	}
 
 	.infocontainer .detail .name {
 		font-size: 0.7em;
 	}
 
-	.info .detail.news {
+	.infocontainer .detail.news {
 		font-style: italic;
+		margin-top: 0.5rem;
 	}
 
 .panel {
