@@ -227,7 +227,8 @@
 							</button>
 							<div class="panel">
 								<p>Making sure that the crew is healthy and safe is of paramount importance for any research mission. In the case of an analog space mission this includes monitoring physical health, but also the mental states of the members of the crew, to ensure that they remain healthy in isolation. The SMOPS crew will perform a <b>daily kinesiology exercise routine</b>, measuring its impact on their health and wellbeing and how they cope with stress. Moreover, they will perform several <b>cortisol tests</b>, playing an important role in understanding (but also preventing) potential health risks including high blood pressure, anxiety, high blood sugar, muscle weakness, etc..; the results of this experiment will be analyzed and published by one of the crew members who is a medical researcher at the University of Calgary, Canada. Another experiment will make use of <b>electroencephalography</b> to observe the changes in the crew members’ brains during meditation sessions. </p>
-								<span class="image main"><img src="images/experiments/Neurofeedback low.jpg" alt="" /></span>
+								<span class="image main"><img src="images/experiments/Neurofeedback low.jpg" alt="" />
+									<div class="text">The electroencephalography device</div></span>							
 							</div>
 							
 							<hr class="separator">
@@ -244,8 +245,22 @@
 							</button>
 							<div class="panel">
 							<p>Space suit simulators are a necessary element of analogue space research, because they can increase the degree of fidelity of simulations and they pave the way for space suit technology development. In the frame of space suit and biomonitoring research, the SMOPS crew will test both a <b>BGM space suit simulator prototype</b>, produced by Mars Planet and the Radici Group, and a pair of <b>sensorised smart shoes</b>, engineered by Vibram and E-Novia group. Both experimental technologies will include several sensors able to measure the crew’s health conditions and the surrounding environment. Moreover, the health parameters of crew members will also be continuously monitored thanks to the <b>Astroskin biomonitor</b>. Such wearable biomonitors include integrated sensors designed to measure the body activity, heart rate, body temperature and pressure.</p>	
-
-							<span class="image main"><img src="images/experiments/suit.png"  alt="" /></span>
+							<div class="slideshow-container">
+								<!-- Full-width images with number and caption text -->
+								<div class="mySlides1">
+								<img src="images/experiments/suit.png" alt="BGM suit">
+								<div class="text">The BGM Space Suit prototype</div>
+								</div>
+							
+								<div class="mySlides1">
+								<img src="images/experiments/astroskin_2.jpeg" alt="Astroskin">
+								<div class="text">The Astroskin biomonitor</div>
+								</div>
+							
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+							</div>
 							</div>
 
 							<hr class="separator">
@@ -262,8 +277,22 @@
 							</button>
 							<div class="panel">
 							<p>Every space mission will need key, cutting-edge technologies to support the activity of crews on other planets. During the SMOPS missions, the crew will run different experiments aimed at the development of emerging technologies. For example, the <b>quality of air</b> will be monitored within the MDRS habitat, thanks to a <b>life support system</b> device developed by the italian company D-Orbit. Moreover, the <b>use of drones on Mars</b> will be investigated by the Drone Operations for Martian Environment (DOME) research group, performing mapping and station inspection flights with a VTOL (Vertical Take Off Landing) drone. Finally, as additive manufacturing paves the way for <i>in situ</i> resources utilisation, several <b>3D printed tools</b> will be tested and more will be printed directly at the station, thanks to an industrial-level printer provided by Roboze.</p>
-
-							<span class="image main"><img src="images/experiments/drones_flight_mdrs.jpg" alt="" /></span>
+							<div class="slideshow-container">
+								<!-- Full-width images with number and caption text -->
+								<div class="mySlides2">
+								<img src="images/experiments/LSS_air_3.jpg" alt="">
+								<div class="text">The D-Orbit Life Support System device</div>
+								</div>
+							
+								<div class="mySlides2">
+								<img src="images/experiments/drones_flight_mdrs.jpg" alt="">
+								<div class="text">The DOME VTOL Drone</div>
+								</div>
+							
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+							</div>
 							</div>
 
 							<hr class="separator">
@@ -280,7 +309,9 @@
 							</button>
 							<div class="panel">
 							<p>Manned space missions will not only mean taking care of the astronauts; the knowledge we have of the universe is still a very very small fraction of what is out there. It is important to take advantage of the remote location of the MDRS, in the middle of one of the widest deserts on Earth, to train for planetary science experiments as well. One of the SMOPS astronauts will carry out two separate <b>analyses on terrain samples</b>, looking for traces of <b>DNA</b> and <b>micrometeorites</b>.</p>
-							<span class="image main"><img src="images/experiments/geo.jpg" alt="" /></span>
+							<span class="image main"><img src="images/experiments/geo.jpg" alt="" />
+								<div class="text">The desertic environment at the MDRS</div></span>							
+							</span>
 							</div>
 
 						</article>
@@ -515,6 +546,8 @@
 			<script src="assets/js/accordionscript.js"> </script>
 			<!-- For the up to top button -->
 			<script src="assets/js/button.js"></script>
+			<script src="assets/js/slideshow.js"></script>
+
 			
 	</body>
 </html>
